@@ -1,0 +1,13 @@
+{
+  "name": "workspace",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "remoteUser": "root",
+  "postCreateCommand": ""
+}

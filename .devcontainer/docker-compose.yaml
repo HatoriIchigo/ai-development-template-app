@@ -1,0 +1,13 @@
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile.workspace
+    volumes:
+      - ..:/workspace:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sleep infinity
+
+networks:
+  default:
+    name: devcontainer_network
